@@ -1,6 +1,6 @@
 function getComputerChoice() {
-    let play = Math.floor(Math.random() * 3);
-    switch(play) {
+    let cPlay = Math.floor(Math.random() * 3);
+    switch(cPlay) {
         case 0:
             return "rock";
         case 1:
@@ -10,4 +10,9 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice());
+function getHumanChoice() {
+    let hPlay = prompt("Rock, Paper, or Scissors?");
+    return hPlay;
+}
+
+console.log(getHumanChoice());
