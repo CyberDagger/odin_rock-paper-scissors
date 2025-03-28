@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     let cPlay = Math.floor(Math.random() * 3);
     switch(cPlay) {
@@ -14,5 +17,3 @@ function getHumanChoice() {
     let hPlay = prompt("Rock, Paper, or Scissors?");
     return hPlay;
 }
-
-console.log(getHumanChoice());
