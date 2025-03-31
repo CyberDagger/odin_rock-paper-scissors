@@ -25,39 +25,39 @@ function playRound(humanChoice, computerChoice) {
         case "rock":
             switch(computerChoice) {
                 case "rock":
-                    result = "tie";
+                    result = "A tie! Both chose Rock.";
                     break;
                 case "paper":
-                    result = "loss";
+                    result = "You lose! Paper beats Rock.";
                     break;
                 case "scissors":
-                    result = "win";
+                    result = "You win! Rock beats Scissors.";
                     break;
             }
             break;
         case "paper":
             switch(computerChoice) {
                 case "rock":
-                    result = "win";
+                    result = "You win! Paper beats Rock.";
                     break;
                 case "paper":
-                    result = "tie";
+                    result = "A tie! Both chose Paper.";
                     break;
                 case "scissors":
-                    result = "loss";
+                    result = "You lose! Scissors beats Paper.";
                     break;
             }
             break;
         case "scissors":
             switch(computerChoice) {
                 case "rock":
-                    result = "loss";
+                    result = "You lose! Rock beats Scissors.";
                     break;
                 case "paper":
-                    result = "win";
+                    result = "You win! Scissors beats Paper.";
                     break;
                 case "scissors":
-                    result = "tie";
+                    result = "A tie! Both chose Scissors.";
                     break;
             }
             break;
