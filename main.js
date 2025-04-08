@@ -59,10 +59,16 @@ function prepareRound(humanChoice) {
     }
     updateScore();
     if (humanScore >= 5) {
-        textTitle.textContent = "Game over! You win! Refresh the page to play again"
+        textTitle.textContent = "Game over! You win! Refresh the page to play again";
+        buttonRock.style.backgroundColor = "palegoldenrod";
+        buttonPaper.style.backgroundColor = "palegoldenrod";
+        buttonScissors.style.backgroundColor = "palegoldenrod";
         gamePlaying = false;
     } else if (computerScore >= 5) {
-        textTitle.textContent = "Game over! You win! Refresh the page to play again"
+        textTitle.textContent = "Game over! You win! Refresh the page to play again";
+        buttonRock.style.backgroundColor = "palegoldenrod";
+        buttonPaper.style.backgroundColor = "palegoldenrod";
+        buttonScissors.style.backgroundColor = "palegoldenrod";
         gamePlaying = false;
     }
 }
@@ -73,62 +79,62 @@ function playRound(humanChoice, computerChoice) {
         case "rock":
             switch(computerChoice) {
                 case "rock":
-                    playComputer.textContent = "Rock";
+                    playComputer.innerHTML = "<img src=\"./images/icon_rock.png\">";
                     textResults.textContent = "A tie! Both chose Rock.";
                     result = "tie";
                     break;
                 case "paper":
-                    playComputer.textContent = "Paper";
+                    playComputer.innerHTML = "<img src=\"./images/icon_paper.png\">";
                     textResults.textContent = "You lose! Paper beats Rock.";
                     result = "loss";
                     break;
                 case "scissors":
-                    playComputer.textContent = "Scissors";
+                    playComputer.innerHTML = "<img src=\"./images/icon_scissors.png\">";
                     textResults.textContent = "You win! Rock beats Scissors.";
                     result = "win";
                     break;
             }
-            playHuman.textContent = "Rock";
+            playHuman.innerHTML = "<img src=\"./images/icon_rock.png\">";
             break;
         case "paper":
             switch(computerChoice) {
                 case "rock":
-                    playComputer.textContent = "Rock";
+                    playComputer.innerHTML = "<img src=\"./images/icon_rock.png\">";
                     textResults.textContent = "You win! Paper beats Rock.";
                     result = "win";
                     break;
                 case "paper":
-                    playComputer.textContent = "Paper";
+                    playComputer.innerHTML = "<img src=\"./images/icon_paper.png\">";
                     textResults.textContent = "A tie! Both chose Paper.";
                     result = "tie";
                     break;
                 case "scissors":
-                    playComputer.textContent = "Scissors";
+                    playComputer.innerHTML = "<img src=\"./images/icon_scissors.png\">";
                     textResults.textContent = "You lose! Scissors beats Paper.";
                     result = "loss";
                     break;
             }
-            playHuman.textContent = "Paper";
+            playHuman.innerHTML = "<img src=\"./images/icon_paper.png\">";
             break;
         case "scissors":
             switch(computerChoice) {
                 case "rock":
-                    playComputer.textContent = "Rock";
+                    playComputer.innerHTML = "<img src=\"./images/icon_rock.png\">";
                     textResults.textContent = "You lose! Rock beats Scissors.";
                     result = "loss";
                     break;
                 case "paper":
-                    playComputer.textContent = "Paper";
+                    playComputer.innerHTML = "<img src=\"./images/icon_paper.png\">";
                     textResults.textContent = "You win! Scissors beats Paper.";
                     result = "win";
                     break;
                 case "scissors":
-                    playComputer.textContent = "Scissors";
+                    playComputer.innerHTML = "<img src=\"./images/icon_scissors.png\">";
                     textResults.textContent = "A tie! Both chose Scissors.";
                     result = "tie";
                     break;
             }
-            playHuman.textContent = "Scissors";
+            playHuman.innerHTML = "<img src=\"./images/icon_scissors.png\">";
             break;
     }
     return result;

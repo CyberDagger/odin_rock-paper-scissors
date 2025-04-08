@@ -1,3 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-family: "Goldman", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: palegoldenrod;
+}
+
+#title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 8px;
+}
+
 .score {
     display: flex;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.score > div {
+    margin: 0 16px;
+}
+
+#computerPlay > img {
+    rotate: 180deg;
+}
+
+#results {
+    font-size: 24px;
+    margin: 16px;
+}
+
+button {
+    font-size: 24px;
+    margin: 0 8px;
+    background-color: goldenrod;
+}
+
+#computerPlay,
+#humanPlay {
+    width: 200px;
+    height: 200px;
+    margin: 8px;
 }

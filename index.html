@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
 <body>
+    <div id="title">Let's Play! Rock, Paper, Scissors.</div>
     <div class="score">
         <div id="scoreHuman">0</div>
         <div id="scoreComputer">0</div>
     </div>
-    <div id="title">Let's Play! Rock, Paper, Scissors.</div>
+    <div id="computerPlay"></div>
+    <div id="humanPlay"></div>
     <div id="results">The results will be shown here.</div>
-    <div id="computerPlay">Computer's Play</div>
-    <div id="humanPlay">Human's Play</div>
-    <button id="buttonRock">Rock</button>
-    <button id="buttonPaper">Paper</button>
-    <button id="buttonScissors">Scissors</button>
+    <div class="buttons">
+        <button id="buttonRock">Rock</button>
+        <button id="buttonPaper">Paper</button>
+        <button id="buttonScissors">Scissors</button>
+    </div>
 </body>
 </html>
