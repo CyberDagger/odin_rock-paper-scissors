@@ -65,7 +65,7 @@ function prepareRound(humanChoice) {
         buttonScissors.style.backgroundColor = "palegoldenrod";
         gamePlaying = false;
     } else if (computerScore >= 5) {
-        textTitle.textContent = "Game over! You win! Refresh the page to play again";
+        textTitle.textContent = "Game over! You lose! Refresh the page to play again";
         buttonRock.style.backgroundColor = "palegoldenrod";
         buttonPaper.style.backgroundColor = "palegoldenrod";
         buttonScissors.style.backgroundColor = "palegoldenrod";
